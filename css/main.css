@@ -114,8 +114,6 @@ section {
    margin-bottom: 10px;
 } */
 
-
-
 #logo {
    margin-bottom: 20px;
    max-width: 382px;
@@ -452,9 +450,6 @@ section {
    margin-bottom: 20px;
    line-height: 18px;
    font-size: 11px;
-<<<<<<< Updated upstream
-}
-=======
 }
 
 /* 9. ---Inclusions--- */
@@ -507,7 +502,6 @@ section {
 
 #show-inclusions {
    background: #333;
-}
 
 /* 10. ---Room Types--- */
 
@@ -572,4 +566,3 @@ section {
 #dining-info {
    margin-top: 12px;
 }
->>>>>>> Stashed changes
