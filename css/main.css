@@ -19,6 +19,10 @@ Couples Resort Responsive Build
 
  /* 1. ---General Styles--- */
 
+:root {
+   --inclusions-shown: 0;
+}
+
  #mobile-outline {
    outline: 20px solid #333;
    max-width: 412px;
@@ -46,6 +50,14 @@ input, textarea {
    color: #9a2018;
 }
 
+section {
+   margin-top: 40px;
+}
+
+.page-scream {
+   font-size: 16px;
+   text-align: center;
+}
 
 /* 2. ---Main Nav--- */
 
@@ -62,6 +74,10 @@ input, textarea {
    display: none;
 }
 
+.five-star-image {
+   margin-left: 65px;
+   margin-bottom: 15px;
+}
 
 /*   ~ sibling selector   */
 
@@ -107,7 +123,7 @@ input, textarea {
 /* 3. ---Main Hero Image--- */
 
 #hero {
-   background: url(../images/hero-main.jpg) no-repeat;
+   background: url(../images/hero-412px.jpg) no-repeat;
    height: 200px;
 }
 
@@ -404,7 +420,7 @@ input, textarea {
 /* 8. ---Footer--- */
 
 #footer-hero {
-   background-image: url(../images/footer.jpg);
+   background-image: url(../images/footer-412px.jpg);
 	background-repeat: no-repeat;
    color: #fff;
    font-size: 12px;
@@ -422,6 +438,10 @@ input, textarea {
    margin-top: 0px;
 }
 
+#footer-contact-info {
+   margin-top: 0px;
+}
+
 #footer-contact-info h3 {
    font-size: 23px;
 }
@@ -434,6 +454,32 @@ input, textarea {
 
 /* 9. ---Inclusions--- */
 
+#inclusions-div input, #all-inclusions {
+   display: none;
+}
+
+#inclusions-div input:checked ~ #all-inclusions {
+   display: block;
+}
+
+#inclusions-div {
+   margin-top: 20px;
+}
+
+#inclusions-div .underlined_list {
+   margin-top: 2px;
+   margin-bottom: 0px;
+}
+
+#show-inclusions-text {
+   color: white;
+   background-color: #9a2018;
+   text-align: center;
+   padding: 10px;
+   width: 364px;
+   height: 20px;
+}
+
 .underlined_list > p {
    font-size: 14px;
    padding: 5px;
@@ -444,17 +490,79 @@ input, textarea {
    margin-bottom: 32px;
 }
 
-#show-inclusions {
-   background-color: #333;
+.overlined_list > p {
+   font-size: 14px;
+   padding: 5px;
+   border-top: 2px solid #CF6666;
 }
+
+.overlined_list {
+   margin-bottom: 32px;
+}
+
+#show-inclusions {
+   background: #333;
 
 /* 10. ---Room Types--- */
 
 .section-header {
-   background: url(../images/hero-main.jpg) no-repeat;
+   background: url(../images/hero-412px.jpg) no-repeat;
    height: 200px;
 }
 
 #chateaus {
-   background: url(../images/hero-main.jpg) no-repeat;
+   background: url(../images/chateau-412px.jpg) no-repeat;
+}
+
+#villas {
+   background: url(../images/villa-412px.jpg) no-repeat;
+}
+
+#masters {
+   background: url(../images/masters-412px.jpg) no-repeat;
+}
+
+#chalet {
+   background: url(../images/chalet-412px.jpg) no-repeat;
+}
+
+#exotics {
+   background: url(../images/exotics-412px.jpg) no-repeat;
+}
+
+#juniors {
+   background: url(../images/juniors-412px.jpg) no-repeat;
+}
+
+#room-options {
+   margin: 40px 0px 40px 0px;
+   list-style: none;
+}
+
+#room-options li {
+   margin-left: -30px;
+   padding: 2px 2px 2px 0;
+}
+
+#room-options li a {
+   color: #626262;
+}
+
+#room-options li:first-of-type {
+   border-left: #9a2018 6px solid;
+   padding-left: 8px;
+}
+
+/* 11. ---Dining Options--- */
+
+#wine {
+   background: url(../images/wine-412px.jpg) no-repeat;
+}
+
+#gourmet-meals {
+   background: url(../images/chef-412px.jpg) no-repeat;
+}
+
+#dining-info {
+   margin-top: 12px;
 }
