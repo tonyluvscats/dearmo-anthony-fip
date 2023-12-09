@@ -462,6 +462,22 @@ section {
    display: block;
 }
 
+#inclusions-div input~ div label::before {
+   content: 'Show ';
+}
+
+#inclusions-div input~ div label::after {
+   content: ' 🔽';
+}
+
+#inclusions-div input:checked ~ div label::before {
+   content: 'Hide ';
+}
+
+#inclusions-div input:checked ~ div label::after {
+   content: ' 🔼';
+}
+
 #inclusions-div {
    margin-top: 20px;
 }
