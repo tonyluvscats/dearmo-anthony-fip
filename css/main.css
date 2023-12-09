@@ -148,7 +148,7 @@ section {
    height: 67px;
 }
 
-#hero-heading-box {
+.hero-heading-box {
    align-self: end;
 }
 
@@ -502,7 +502,7 @@ section {
 
 #show-inclusions {
    background: #333;
-
+}
 /* 10. ---Room Types--- */
 
 .section-header {
