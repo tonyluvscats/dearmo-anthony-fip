@@ -462,11 +462,11 @@ section {
    display: block;
 }
 
-#inclusions-div input~ div label::before {
+#inclusions-div input ~ div label::before {
    content: 'Show ';
 }
 
-#inclusions-div input~ div label::after {
+#inclusions-div input ~ div label::after {
    content: ' 🔽';
 }
 
@@ -476,6 +476,16 @@ section {
 
 #inclusions-div input:checked ~ div label::after {
    content: ' 🔼';
+}
+
+#inclusions-div input:hover ~ #show-inclusions-text {
+   border-radius: 10px;
+   background-color: rgb(196, 28, 28);
+}
+
+#inclusions-div input:active ~ #show-inclusions-text {
+   border-radius: 10px;
+   background-color: rgb(105, 15, 15);
 }
 
 #inclusions-div {
@@ -494,6 +504,7 @@ section {
    padding: 10px;
    width: 364px;
    height: 20px;
+   transition: ease-out 0.3s;
 }
 
 .underlined_list > p {
